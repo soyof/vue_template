@@ -16,6 +16,9 @@ import '@/permission' // permission control
 
 Vue.config.productionTip = false
 
+// import Plugin from '@/utils/axios'
+// Vue.use(Plugin)
+
 new Vue({
   router,
   store,

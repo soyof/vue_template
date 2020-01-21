@@ -5,10 +5,17 @@
 </template>
 
 <script>
+import { getDetail } from "@/api"
+
 export default {
   name: 'Login',
   data() {
     return {}
+  },
+  mounted() {
+    getDetail().then(res => {
+      console.log(res)
+    })
   },
   methods: {
     login() {

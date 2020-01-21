@@ -1,4 +1,4 @@
-# vue template
+# musicplayer
 
 ## 项目初始化
 ```shell script

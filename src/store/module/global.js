@@ -1,6 +1,12 @@
 const global = {
-  state: {},
-  mutations: {},
+  state: {
+    loading: false
+  },
+  mutations: {
+    SET_LOADING: (state, loading) => {
+      state.loading = loading
+    }
+  },
   actions: {}
 }
 
