@@ -10,7 +10,7 @@ Object.keys(filters).forEach(key => {
 })
 
 import 'normalize.css' // resets css
-import '@/styles/global.scss' // global style
+import '@/styles/global/index.scss' // global style
 
 import '@/permission' // permission control
 

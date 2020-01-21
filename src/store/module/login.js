@@ -1,6 +1,6 @@
 const login = {
   state: {
-    isLogin: false
+    isLogin: true
   },
   mutations: {
     SET_LOGIN: (state, payload) => {

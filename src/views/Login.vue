@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { getDetail } from "@/api"
+// import { getDetail } from "@/api"
 
 export default {
   name: 'Login',
@@ -13,9 +13,9 @@ export default {
     return {}
   },
   mounted() {
-    getDetail().then(res => {
-      console.log(res)
-    })
+    // getDetail().then(res => {
+    //   console.log(res)
+    // })
   },
   methods: {
     login() {
