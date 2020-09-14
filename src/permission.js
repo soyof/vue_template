@@ -1,7 +1,7 @@
-import router from './router'
-import store from './store'
 import NProgress from 'nprogress' // Progress 进度条
 import 'nprogress/nprogress.css' // Progress 进度条样式
+import router from './router'
+import store from './store'
 
 const whiteList = ['/login'] // 不重定向白名单
 
@@ -12,7 +12,7 @@ function checkLogin() {
     } else {
       // 进行登录操作
       resolve(false)
-      console.log('请进行登录操作')
+      // console.log('请进行登录操作')
     }
   })
 }

@@ -1,7 +1,7 @@
-// const path = require('path')
-// function resolve(dir) {
-//   return path.join(__dirname, dir)
-// }
+const path = require('path')
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
 module.exports = {
   publicPath: '/',
   outputDir: 'dist',
@@ -9,7 +9,7 @@ module.exports = {
   // 别名配置
   // chainWebpack: (config) => {
   //   config.resolve.alias
-  //     .set('@$', resolve('src'))
+  //     .set('@', resolve('src'))
   //     .set('assets', resolve('src/assets'))
   //     .set('components', resolve('src/components'))
   //     .set('layout', resolve('src/layout'))
@@ -20,7 +20,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@': '/src',
+        '@': resolve('src'),
         'assets': '@/assets',
         'components': '@/components',
         'views': '@/views'
