@@ -19,6 +19,7 @@ module.exports = {
   */
   rules: {
     'accessor-pairs': 2,
+	'arrow-parens': 0,
     'arrow-spacing': [
       2, {
         'before': true,
@@ -102,7 +103,7 @@ module.exports = {
     'new-parens': 2,
     'no-array-constructor': 2,
     'no-caller': 2,
-    'no-console': 'off',
+    'no-console': 1,
     'no-class-assign': 2,
     'no-cond-assign': 2, // 禁止在条件表达式中使用赋值语句
     'no-const-assign': 2,
@@ -287,7 +288,7 @@ module.exports = {
       'attribute': 1,
       'baseIndent': 1,
       'closeBracket': 0,
-      'alignAttributesVertically': true,
+      'alignAttributesVertically': false,
       'ignores': []
     }],
     'vue/html-quotes': ['error', 'double'],

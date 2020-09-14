@@ -55,10 +55,9 @@ _axios.interceptors.response.use(
       return data.data
     } else if (data.error === 0) {
       return data
-    } else {
-      _error(data)
-      return Promise.reject(new Error(data.message))
     }
+    _error(data)
+    return Promise.reject(new Error(data.message))
   },
   function(error) {
     _error(error)
@@ -70,6 +69,7 @@ _axios.interceptors.response.use(
 const _mixinParam = (param) => {
   const _userId = store.getters.userId
   Object.assign(param, {
+    _: `${Date.parse(new Date())}${Math.random().toString(36).substr(2)}`, // 防止IE浏览器请求gen接口默认走缓存,导致不能及时获取最新数据
     userId: _userId
   })
   return param
