@@ -1,6 +1,7 @@
 {
-  "name": "musicplayer",
+  "name": "vue-template",
   "version": "0.1.0",
+  "author": "Mr.H",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --inline",
