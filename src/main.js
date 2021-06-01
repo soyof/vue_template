@@ -10,7 +10,7 @@ import router from './router'
 import store from './store'
 
 Object.keys(filters).forEach(key => {
-  Vue.config(key, filters[key])
+  Vue.filter(key, filters[key])
 })
 
 Vue.use(element)
